@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>کافه کیک لوتوس</title>
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="node_modules/remixicon/fonts/remixicon.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+</head>
+<body>
+
+<header>
+    <div class="container-fluid bg-light-color">
+        <nav class="row p-3">
+            <div class="col-md-4 col-5">
+                <div class="row align-items-center">
+                        <a href="" class="brand-font dark-pink-text fw-bold text-shadow h3">کافه کیک لوتوس</a>
+                </div>
+            </div>
+
+            <div  class="col-md-5 d-none d-md-flex row mt-2 align-items-center justify-content-center">
+                <div  class="input-container">
+                    <input type="text" name="text" class="input text-dark bg-light-color" placeholder="جستجو...">
+                    <span class="icon">
+    <svg width="19px" height="19px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path opacity="1" d="M14 5H20" stroke="#A80038" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path opacity="1" d="M14 8H17" stroke="#A80038" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M21 11.5C21 16.75 16.75 21 11.5 21C6.25 21 2 16.75 2 11.5C2 6.25 6.25 2 11.5 2" stroke="#A80038" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path> <path opacity="1" d="M22 22L20 20" stroke="#A80038" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+  </span>
+                </div>
+            </div>
+
+            <div class="col-md-3 d-none d-md-flex row justify-content-end">
+                <a href="" class="col-md-3 p-0 w-25 text-end mx-auto">
+                    <lord-icon class="w-75 h-100"
+                               src="https://cdn.lordicon.com/odavpkmb.json"
+                               trigger="hover"
+                               colors="primary:#2b2024,secondary:#fd0054"
+                               style="width:250px;height:250px">
+                    </lord-icon>
+                </a>
+                <a href="" class="col-md-3 p-0 w-25 text-end mx-auto">
+                    <lord-icon class="w-75 h-100"
+                               src="https://cdn.lordicon.com/jjoolpwc.json"
+                               trigger="hover"
+                               colors="primary:#2b2024,secondary:#fd0054"
+                               style="width:250px;height:250px">
+                    </lord-icon>
+                </a>
+                <a class="col-md-3 p-0 mx-auto w-25 text-end" href="">
+                    <lord-icon class="w-75 h-100"
+                               src="https://cdn.lordicon.com/bgebyztw.json"
+                               trigger="hover"
+                               colors="primary:#2b2024,secondary:#fd0054"
+                               style="width:250px;height:250px">
+                    </lord-icon>
+                </a>
+            </div>
+
+            <div class="col-3 offset-4 d-flex d-md-none align-items-center justify-content-end"><i class="me-2 h2 ri-menu-fill pink-text"></i></div>
+        </nav>
+
+    </div>
+</header>
+
+<div id="menu-container" class="d-md-flex d-none text-center">
+    <ul id="menu" class="position-absolute top-0 end-0 start-0 mx-auto row m-0 p-0 justify-content-center  w-100 bg-light-color shadow-lg">
+        <li class="col-1 bg-light-color p-2 text-center"><a class="hover-menu text-dark text-center" href="">کیک</a></li>
+        <li class="col-1 bg-light-color p-2 text-center"><a class="hover-menu text-dark text-center" href="">شیرینی</a></li>
+        <li class="col-1 bg-light-color p-2 text-center"><a class="hover-menu text-dark text-center" href="">دسر</a></li>
+        <li class="col-1 bg-light-color p-2 text-center"><a class="hover-menu text-dark text-center" href="">آبنبات</a></li>
+        <li class="col-1 offset-1 bg-light-color p-2 text-center"><a class="hover-menu text-dark text-center" href="">فینگر فود</a></li>
+        <li class="col-1 bg-light-color p-2 text-center"><a class="hover-menu text-dark text-center" href="">سوالات</a></li>
+        <li class="col-1 bg-light-color p-2 text-center"><a class="hover-menu text-dark text-center" href="">ارتباط</a></li>
+        <li class="col-1 bg-light-color p-2 text-center"><a class="hover-menu text-dark text-center" href="">خانه</a></li>
+    </ul>
+    <div id="display-menu" class="position-absolute top-0 end-0 start-0 mx-auto bg-dark-pink text-white text-center h3">منو <div><i class="ri-arrow-down-wide-line"></i></div></div>
+    <div id="close" class="position-absolute top-0 end-0 start-0 mx-auto bg-dark-pink text-center"><i class="ri-close-fill text-white"></i></div>
+</div>
+
+<svg id="visual" viewBox="0 0 900 100" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><path d="M0 77L7.2 77.8C14.3 78.7 28.7 80.3 43 80.7C57.3 81 71.7 80 86 77.2C100.3 74.3 114.7 69.7 128.8 67C143 64.3 157 63.7 171.2 66.2C185.3 68.7 199.7 74.3 214 74.8C228.3 75.3 242.7 70.7 257 69.5C271.3 68.3 285.7 70.7 300 72.7C314.3 74.7 328.7 76.3 343 76.2C357.3 76 371.7 74 386 71.8C400.3 69.7 414.7 67.3 428.8 66.5C443 65.7 457 66.3 471.2 69.3C485.3 72.3 499.7 77.7 514 78.5C528.3 79.3 542.7 75.7 557 74.5C571.3 73.3 585.7 74.7 600 76C614.3 77.3 628.7 78.7 643 79.8C657.3 81 671.7 82 686 80C700.3 78 714.7 73 728.8 69.7C743 66.3 757 64.7 771.2 64.7C785.3 64.7 799.7 66.3 814 69C828.3 71.7 842.7 75.3 857 77C871.3 78.7 885.7 78.3 892.8 78.2L900 78L900 0L892.8 0C885.7 0 871.3 0 857 0C842.7 0 828.3 0 814 0C799.7 0 785.3 0 771.2 0C757 0 743 0 728.8 0C714.7 0 700.3 0 686 0C671.7 0 657.3 0 643 0C628.7 0 614.3 0 600 0C585.7 0 571.3 0 557 0C542.7 0 528.3 0 514 0C499.7 0 485.3 0 471.2 0C457 0 443 0 428.8 0C414.7 0 400.3 0 386 0C371.7 0 357.3 0 343 0C328.7 0 314.3 0 300 0C285.7 0 271.3 0 257 0C242.7 0 228.3 0 214 0C199.7 0 185.3 0 171.2 0C157 0 143 0 128.8 0C114.7 0 100.3 0 86 0C71.7 0 57.3 0 43 0C28.7 0 14.3 0 7.2 0L0 0Z" fill="#fd0054"></path><path d="M0 53L7.2 53.2C14.3 53.3 28.7 53.7 43 52.3C57.3 51 71.7 48 86 47.8C100.3 47.7 114.7 50.3 128.8 52.3C143 54.3 157 55.7 171.2 56.5C185.3 57.3 199.7 57.7 214 57.7C228.3 57.7 242.7 57.3 257 56.8C271.3 56.3 285.7 55.7 300 56C314.3 56.3 328.7 57.7 343 57C357.3 56.3 371.7 53.7 386 51.7C400.3 49.7 414.7 48.3 428.8 50.5C443 52.7 457 58.3 471.2 58.8C485.3 59.3 499.7 54.7 514 51.2C528.3 47.7 542.7 45.3 557 45.2C571.3 45 585.7 47 600 50C614.3 53 628.7 57 643 59.5C657.3 62 671.7 63 686 61.2C700.3 59.3 714.7 54.7 728.8 53C743 51.3 757 52.7 771.2 53.3C785.3 54 799.7 54 814 53.2C828.3 52.3 842.7 50.7 857 52C871.3 53.3 885.7 57.7 892.8 59.8L900 62L900 0L892.8 0C885.7 0 871.3 0 857 0C842.7 0 828.3 0 814 0C799.7 0 785.3 0 771.2 0C757 0 743 0 728.8 0C714.7 0 700.3 0 686 0C671.7 0 657.3 0 643 0C628.7 0 614.3 0 600 0C585.7 0 571.3 0 557 0C542.7 0 528.3 0 514 0C499.7 0 485.3 0 471.2 0C457 0 443 0 428.8 0C414.7 0 400.3 0 386 0C371.7 0 357.3 0 343 0C328.7 0 314.3 0 300 0C285.7 0 271.3 0 257 0C242.7 0 228.3 0 214 0C199.7 0 185.3 0 171.2 0C157 0 143 0 128.8 0C114.7 0 100.3 0 86 0C71.7 0 57.3 0 43 0C28.7 0 14.3 0 7.2 0L0 0Z" fill="#ff789c"></path><path d="M0 38L7.2 37.3C14.3 36.7 28.7 35.3 43 36.3C57.3 37.3 71.7 40.7 86 41.5C100.3 42.3 114.7 40.7 128.8 40.3C143 40 157 41 171.2 41.7C185.3 42.3 199.7 42.7 214 42.3C228.3 42 242.7 41 257 40.7C271.3 40.3 285.7 40.7 300 40.2C314.3 39.7 328.7 38.3 343 38C357.3 37.7 371.7 38.3 386 39.3C400.3 40.3 414.7 41.7 428.8 41.5C443 41.3 457 39.7 471.2 37C485.3 34.3 499.7 30.7 514 30.2C528.3 29.7 542.7 32.3 557 33C571.3 33.7 585.7 32.3 600 32.8C614.3 33.3 628.7 35.7 643 37.8C657.3 40 671.7 42 686 42.5C700.3 43 714.7 42 728.8 39.3C743 36.7 757 32.3 771.2 30C785.3 27.7 799.7 27.3 814 30.3C828.3 33.3 842.7 39.7 857 42.5C871.3 45.3 885.7 44.7 892.8 44.3L900 44L900 0L892.8 0C885.7 0 871.3 0 857 0C842.7 0 828.3 0 814 0C799.7 0 785.3 0 771.2 0C757 0 743 0 728.8 0C714.7 0 700.3 0 686 0C671.7 0 657.3 0 643 0C628.7 0 614.3 0 600 0C585.7 0 571.3 0 557 0C542.7 0 528.3 0 514 0C499.7 0 485.3 0 471.2 0C457 0 443 0 428.8 0C414.7 0 400.3 0 386 0C371.7 0 357.3 0 343 0C328.7 0 314.3 0 300 0C285.7 0 271.3 0 257 0C242.7 0 228.3 0 214 0C199.7 0 185.3 0 171.2 0C157 0 143 0 128.8 0C114.7 0 100.3 0 86 0C71.7 0 57.3 0 43 0C28.7 0 14.3 0 7.2 0L0 0Z" fill="#febbd4"></path><path d="M0 9L7.2 11C14.3 13 28.7 17 43 19.3C57.3 21.7 71.7 22.3 86 22.8C100.3 23.3 114.7 23.7 128.8 21.7C143 19.7 157 15.3 171.2 13.5C185.3 11.7 199.7 12.3 214 12.5C228.3 12.7 242.7 12.3 257 14.3C271.3 16.3 285.7 20.7 300 21.3C314.3 22 328.7 19 343 19C357.3 19 371.7 22 386 22.2C400.3 22.3 414.7 19.7 428.8 18C443 16.3 457 15.7 471.2 17.5C485.3 19.3 499.7 23.7 514 25.3C528.3 27 542.7 26 557 25.3C571.3 24.7 585.7 24.3 600 21.8C614.3 19.3 628.7 14.7 643 13.2C657.3 11.7 671.7 13.3 686 13.8C700.3 14.3 714.7 13.7 728.8 14.5C743 15.3 757 17.7 771.2 17.2C785.3 16.7 799.7 13.3 814 14.2C828.3 15 842.7 20 857 21C871.3 22 885.7 19 892.8 17.5L900 16L900 0L892.8 0C885.7 0 871.3 0 857 0C842.7 0 828.3 0 814 0C799.7 0 785.3 0 771.2 0C757 0 743 0 728.8 0C714.7 0 700.3 0 686 0C671.7 0 657.3 0 643 0C628.7 0 614.3 0 600 0C585.7 0 571.3 0 557 0C542.7 0 528.3 0 514 0C499.7 0 485.3 0 471.2 0C457 0 443 0 428.8 0C414.7 0 400.3 0 386 0C371.7 0 357.3 0 343 0C328.7 0 314.3 0 300 0C285.7 0 271.3 0 257 0C242.7 0 228.3 0 214 0C199.7 0 185.3 0 171.2 0C157 0 143 0 128.8 0C114.7 0 100.3 0 86 0C71.7 0 57.3 0 43 0C28.7 0 14.3 0 7.2 0L0 0Z" fill="#fbf9fa"></path></svg>
+
+<section>
+   <div class="container">
+       <div class="row align-items-center g-3">
+           <div  data-aos="fade-left" class="col-12 col-sm-12 col-md-6 text-center">
+               <h1>کیک های ترند روز</h1> <br>
+               <a class="Btn mx-auto" href="">مشاهده همه</a>
+           </div>
+           <div data-aos="fade-right" class="col-12 col-sm-12 col-md-6">
+               <div id="carouselExample" class="carousel slide">
+                   <div class="carousel-inner">
+                       <div class="carousel-item active">
+                           <img src="assets/pics/trendcack2.jpeg" class="d-block w-100" alt="...">
+                       </div>
+                       <div class="carousel-item">
+                           <img src="assets/pics/trendcack3.jpeg" class="d-block w-100" alt="...">
+                       </div>
+                       <div class="carousel-item">
+                           <img src="assets/pics/trendcack4.jpeg" class="d-block w-100" alt="...">
+                       </div>
+                   </div>
+                   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                   </button>
+                   <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                       <span class="visually-hidden">Next</span>
+                   </button>
+               </div>
+           </div>
+       </div>
+       <div class="row align-items-center g-3 mt-4">
+           <div class="col-12 col-sm-6 col-md-4">
+               <div  data-aos="fade-up" data-aos-delay="100" class="carrd mx-auto rounded-4">
+                   <div class="card-details text-center">
+                       <img class="rounded-4 w-100 h-75" src="assets/pics/trendcack2.jpeg" alt="">
+                       <p class="text-title">کیک تولد</p>
+                   </div>
+                   <button class="card-button">مشاهده</button>
+               </div>
+           </div>
+           <div class="col-12 col-sm-6 col-md-4">
+               <div data-aos="fade-up" data-aos-delay="200" class="carrd mx-auto rounded-4">
+                  <div class="card-details text-center">
+                       <img class="rounded-4 w-100 h-75" src="assets/pics/trendcack2.jpeg" alt="">
+                       <p class="text-title">شیرینی عید</p>
+                   </div>
+                   <button class="card-button">مشاهده</button>
+               </div>
+           </div>
+           <div class="col-12 col-sm-6 col-md-4">
+               <div data-aos="fade-up" data-aos-delay="400" class="carrd mx-auto rounded-4">
+                   <div class="card-details text-center">
+                       <img class="rounded-4 w-100 h-75" src="assets/pics/trendcack3.jpeg" alt="">
+                       <p class="text-title">کیک کافی شاپی</p>
+                   </div>
+                   <button class="card-button">مشاهده</button>
+               </div>
+           </div>
+       </div>
+   </div>
+</section>
+
+<svg id="visual" viewBox="0 0 600 70" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><path d="M0 31L7.2 31.5C14.3 32 28.7 33 43 33C57.3 33 71.7 32 86 29C100.3 26 114.7 21 128.8 20.8C143 20.7 157 25.3 171.2 24.5C185.3 23.7 199.7 17.3 214 18.5C228.3 19.7 242.7 28.3 257 28.2C271.3 28 285.7 19 300 17.8C314.3 16.7 328.7 23.3 343 26.5C357.3 29.7 371.7 29.3 386 27.2C400.3 25 414.7 21 428.8 22.5C443 24 457 31 471.2 34.7C485.3 38.3 499.7 38.7 514 36.8C528.3 35 542.7 31 557 27.2C571.3 23.3 585.7 19.7 592.8 17.8L600 16L600 71L592.8 71C585.7 71 571.3 71 557 71C542.7 71 528.3 71 514 71C499.7 71 485.3 71 471.2 71C457 71 443 71 428.8 71C414.7 71 400.3 71 386 71C371.7 71 357.3 71 343 71C328.7 71 314.3 71 300 71C285.7 71 271.3 71 257 71C242.7 71 228.3 71 214 71C199.7 71 185.3 71 171.2 71C157 71 143 71 128.8 71C114.7 71 100.3 71 86 71C71.7 71 57.3 71 43 71C28.7 71 14.3 71 7.2 71L0 71Z" fill="#fd0054"></path><path d="M0 35L7.2 37.5C14.3 40 28.7 45 43 47C57.3 49 71.7 48 86 44.2C100.3 40.3 114.7 33.7 128.8 30.2C143 26.7 157 26.3 171.2 27.2C185.3 28 199.7 30 214 32.8C228.3 35.7 242.7 39.3 257 38.5C271.3 37.7 285.7 32.3 300 31.2C314.3 30 328.7 33 343 34.2C357.3 35.3 371.7 34.7 386 36C400.3 37.3 414.7 40.7 428.8 41.3C443 42 457 40 471.2 37.5C485.3 35 499.7 32 514 29.8C528.3 27.7 542.7 26.3 557 29.7C571.3 33 585.7 41 592.8 45L600 49L600 71L592.8 71C585.7 71 571.3 71 557 71C542.7 71 528.3 71 514 71C499.7 71 485.3 71 471.2 71C457 71 443 71 428.8 71C414.7 71 400.3 71 386 71C371.7 71 357.3 71 343 71C328.7 71 314.3 71 300 71C285.7 71 271.3 71 257 71C242.7 71 228.3 71 214 71C199.7 71 185.3 71 171.2 71C157 71 143 71 128.8 71C114.7 71 100.3 71 86 71C71.7 71 57.3 71 43 71C28.7 71 14.3 71 7.2 71L0 71Z" fill="#d20046"></path><path d="M0 51L7.2 49.5C14.3 48 28.7 45 43 47.3C57.3 49.7 71.7 57.3 86 60.8C100.3 64.3 114.7 63.7 128.8 61.3C143 59 157 55 171.2 51.5C185.3 48 199.7 45 214 45.3C228.3 45.7 242.7 49.3 257 49C271.3 48.7 285.7 44.3 300 45.8C314.3 47.3 328.7 54.7 343 57.2C357.3 59.7 371.7 57.3 386 54.3C400.3 51.3 414.7 47.7 428.8 48.7C443 49.7 457 55.3 471.2 56.7C485.3 58 499.7 55 514 52.8C528.3 50.7 542.7 49.3 557 50.3C571.3 51.3 585.7 54.7 592.8 56.3L600 58L600 71L592.8 71C585.7 71 571.3 71 557 71C542.7 71 528.3 71 514 71C499.7 71 485.3 71 471.2 71C457 71 443 71 428.8 71C414.7 71 400.3 71 386 71C371.7 71 357.3 71 343 71C328.7 71 314.3 71 300 71C285.7 71 271.3 71 257 71C242.7 71 228.3 71 214 71C199.7 71 185.3 71 171.2 71C157 71 143 71 128.8 71C114.7 71 100.3 71 86 71C71.7 71 57.3 71 43 71C28.7 71 14.3 71 7.2 71L0 71Z" fill="#a80038"></path></svg>
+<section class="bg-dark-pink">
+    <div  class="container bg-light-color rounded-4 py-4 shadow">
+        <a data-aos="fade-down" href="" class="text-center"> <h1 class="pink-text display-3 headtexthover">کیک های پینترستی</h1> </a>
+        <div data-aos="fade-up" class="row py-4">
+            <div class="swiper mySwiper p-0 pt-2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide bg-light-color"><div class="card" style="width: 12rem;">
+                        <img src="assets/pics/trendcack2.JPEG" class="d-block w-100 card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">کیک پینترستی</h5>
+                            <h6 class="card-subtitle mb-2 text-body-secondary">قیمت 149 تومان</h6>
+                            <div class="row">
+                                <div class="col-4 h3">
+                                    <lord-icon class="w-100 h-100"
+                                               src="https://cdn.lordicon.com/odavpkmb.json"
+                                               trigger="hover"
+                                               colors="primary:#2b2024,secondary:#fd0054"
+                                               style="width:250px;height:250px">
+                                    </lord-icon>
+                                </div>
+                                <div class="col-4 p-0">
+                                    <input class="w-100" type="number" placeholder="1">
+                                </div>
+                                <div class="col-4 h3">
+                                    <lord-icon class="w-100 h-100"
+                                               src="https://cdn.lordicon.com/jjoolpwc.json"
+                                               trigger="hover"
+                                               colors="primary:#2b2024,secondary:#fd0054"
+                                               style="width:250px;height:250px">
+                                    </lord-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div></div>
+                    <div class="swiper-slide bg-light-color"><div class="card" style="width: 12rem;">
+                        <img src="assets/pics/trendcack2.JPEG" class="d-block w-100 card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">کیک پینترستی</h5>
+                            <h6 class="card-subtitle mb-2 text-body-secondary">قیمت 149 تومان</h6>
+                            <div class="row">
+                                <div class="col-4 h3">
+                                    <lord-icon class="w-100 h-100"
+                                               src="https://cdn.lordicon.com/odavpkmb.json"
+                                               trigger="hover"
+                                               colors="primary:#2b2024,secondary:#fd0054"
+                                               style="width:250px;height:250px">
+                                    </lord-icon>
+                                </div>
+                                <div class="col-4 p-0">
+                                    <input class="w-100" type="number" placeholder="1">
+                                </div>
+                                <div class="col-4 h3">
+                                    <lord-icon class="w-100 h-100"
+                                               src="https://cdn.lordicon.com/jjoolpwc.json"
+                                               trigger="hover"
+                                               colors="primary:#2b2024,secondary:#fd0054"
+                                               style="width:250px;height:250px">
+                                    </lord-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div></div>
+                    <div class="swiper-slide bg-light-color"><div class="card" style="width: 12rem;">
+                        <img src="assets/pics/trendcack2.JPEG" class="d-block w-100 card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">کیک پینترستی</h5>
+                            <h6 class="card-subtitle mb-2 text-body-secondary">قیمت 149 تومان</h6>
+                            <div class="row">
+                                <div class="col-4 h3">
+                                    <lord-icon class="w-100 h-100"
+                                               src="https://cdn.lordicon.com/odavpkmb.json"
+                                               trigger="hover"
+                                               colors="primary:#2b2024,secondary:#fd0054"
+                                               style="width:250px;height:250px">
+                                    </lord-icon>
+                                </div>
+                                <div class="col-4 p-0">
+                                    <input class="w-100" type="number" placeholder="1">
+                                </div>
+                                <div class="col-4 h3">
+                                    <lord-icon class="w-100 h-100"
+                                               src="https://cdn.lordicon.com/jjoolpwc.json"
+                                               trigger="hover"
+                                               colors="primary:#2b2024,secondary:#fd0054"
+                                               style="width:250px;height:250px">
+                                    </lord-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div></div>
+                    <div class="swiper-slide bg-light-color"><div class="card" style="width: 12rem;">
+                        <img src="assets/pics/trendcack2.JPEG" class="d-block w-100 card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">کیک پینترستی</h5>
+                            <h6 class="card-subtitle mb-2 text-body-secondary">قیمت 149 تومان</h6>
+                            <div class="row">
+                                <div class="col-4 h3">
+                                    <lord-icon class="w-100 h-100"
+                                               src="https://cdn.lordicon.com/odavpkmb.json"
+                                               trigger="hover"
+                                               colors="primary:#2b2024,secondary:#fd0054"
+                                               style="width:250px;height:250px">
+                                    </lord-icon>
+                                </div>
+                                <div class="col-4 p-0">
+                                    <input class="w-100" type="number" placeholder="1">
+                                </div>
+                                <div class="col-4 h3">
+                                    <lord-icon class="w-100 h-100"
+                                               src="https://cdn.lordicon.com/jjoolpwc.json"
+                                               trigger="hover"
+                                               colors="primary:#2b2024,secondary:#fd0054"
+                                               style="width:250px;height:250px">
+                                    </lord-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div></div>
+                    <div class="swiper-slide bg-light-color"><div class="card" style="width: 12rem;">
+                        <img src="assets/pics/trendcack2.JPEG" class="d-block w-100 card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">کیک پینترستی</h5>
+                            <h6 class="card-subtitle mb-2 text-body-secondary">قیمت 149 تومان</h6>
+                            <div class="row">
+                                <div class="col-4 h3">
+                                    <lord-icon class="w-100 h-100"
+                                               src="https://cdn.lordicon.com/odavpkmb.json"
+                                               trigger="hover"
+                                               colors="primary:#2b2024,secondary:#fd0054"
+                                               style="width:250px;height:250px">
+                                    </lord-icon>
+                                </div>
+                                <div class="col-4 p-0">
+                                    <input class="w-100" type="number" placeholder="1">
+                                </div>
+                                <div class="col-4 h3">
+                                    <lord-icon class="w-100 h-100"
+                                               src="https://cdn.lordicon.com/jjoolpwc.json"
+                                               trigger="hover"
+                                               colors="primary:#2b2024,secondary:#fd0054"
+                                               style="width:250px;height:250px">
+                                    </lord-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div></div>
+                    <div class="swiper-slide bg-light-color"><div class="card" style="width: 12rem;">
+                        <img src="assets/pics/trendcack2.JPEG" class="d-block w-100 card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">کیک پینترستی</h5>
+                            <h6 class="card-subtitle mb-2 text-body-secondary">قیمت 149 تومان</h6>
+                            <div class="row">
+                                <div class="col-4 h3">
+                                    <lord-icon class="w-100 h-100"
+                                               src="https://cdn.lordicon.com/odavpkmb.json"
+                                               trigger="hover"
+                                               colors="primary:#2b2024,secondary:#fd0054"
+                                               style="width:250px;height:250px">
+                                    </lord-icon>
+                                </div>
+                                <div class="col-4 p-0">
+                                    <input class="w-100" type="number" placeholder="1">
+                                </div>
+                                <div class="col-4 h3">
+                                    <lord-icon class="w-100 h-100"
+                                               src="https://cdn.lordicon.com/jjoolpwc.json"
+                                               trigger="hover"
+                                               colors="primary:#2b2024,secondary:#fd0054"
+                                               style="width:250px;height:250px">
+                                    </lord-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<svg id="visual" viewBox="0 0 600 70" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><path d="M0 37L7.2 36.5C14.3 36 28.7 35 43 35C57.3 35 71.7 36 86 39C100.3 42 114.7 47 128.8 47.2C143 47.3 157 42.7 171.2 43.5C185.3 44.3 199.7 50.7 214 49.5C228.3 48.3 242.7 39.7 257 39.8C271.3 40 285.7 49 300 50.2C314.3 51.3 328.7 44.7 343 41.5C357.3 38.3 371.7 38.7 386 40.8C400.3 43 414.7 47 428.8 45.5C443 44 457 37 471.2 33.3C485.3 29.7 499.7 29.3 514 31.2C528.3 33 542.7 37 557 40.8C571.3 44.7 585.7 48.3 592.8 50.2L600 52L600 0L592.8 0C585.7 0 571.3 0 557 0C542.7 0 528.3 0 514 0C499.7 0 485.3 0 471.2 0C457 0 443 0 428.8 0C414.7 0 400.3 0 386 0C371.7 0 357.3 0 343 0C328.7 0 314.3 0 300 0C285.7 0 271.3 0 257 0C242.7 0 228.3 0 214 0C199.7 0 185.3 0 171.2 0C157 0 143 0 128.8 0C114.7 0 100.3 0 86 0C71.7 0 57.3 0 43 0C28.7 0 14.3 0 7.2 0L0 0Z" fill="#fd0054"></path><path d="M0 33L7.2 30.5C14.3 28 28.7 23 43 21C57.3 19 71.7 20 86 23.8C100.3 27.7 114.7 34.3 128.8 37.8C143 41.3 157 41.7 171.2 40.8C185.3 40 199.7 38 214 35.2C228.3 32.3 242.7 28.7 257 29.5C271.3 30.3 285.7 35.7 300 36.8C314.3 38 328.7 35 343 33.8C357.3 32.7 371.7 33.3 386 32C400.3 30.7 414.7 27.3 428.8 26.7C443 26 457 28 471.2 30.5C485.3 33 499.7 36 514 38.2C528.3 40.3 542.7 41.7 557 38.3C571.3 35 585.7 27 592.8 23L600 19L600 0L592.8 0C585.7 0 571.3 0 557 0C542.7 0 528.3 0 514 0C499.7 0 485.3 0 471.2 0C457 0 443 0 428.8 0C414.7 0 400.3 0 386 0C371.7 0 357.3 0 343 0C328.7 0 314.3 0 300 0C285.7 0 271.3 0 257 0C242.7 0 228.3 0 214 0C199.7 0 185.3 0 171.2 0C157 0 143 0 128.8 0C114.7 0 100.3 0 86 0C71.7 0 57.3 0 43 0C28.7 0 14.3 0 7.2 0L0 0Z" fill="#d20046"></path><path d="M0 17L7.2 18.5C14.3 20 28.7 23 43 20.7C57.3 18.3 71.7 10.7 86 7.2C100.3 3.7 114.7 4.3 128.8 6.7C143 9 157 13 171.2 16.5C185.3 20 199.7 23 214 22.7C228.3 22.3 242.7 18.7 257 19C271.3 19.3 285.7 23.7 300 22.2C314.3 20.7 328.7 13.3 343 10.8C357.3 8.3 371.7 10.7 386 13.7C400.3 16.7 414.7 20.3 428.8 19.3C443 18.3 457 12.7 471.2 11.3C485.3 10 499.7 13 514 15.2C528.3 17.3 542.7 18.7 557 17.7C571.3 16.7 585.7 13.3 592.8 11.7L600 10L600 0L592.8 0C585.7 0 571.3 0 557 0C542.7 0 528.3 0 514 0C499.7 0 485.3 0 471.2 0C457 0 443 0 428.8 0C414.7 0 400.3 0 386 0C371.7 0 357.3 0 343 0C328.7 0 314.3 0 300 0C285.7 0 271.3 0 257 0C242.7 0 228.3 0 214 0C199.7 0 185.3 0 171.2 0C157 0 143 0 128.8 0C114.7 0 100.3 0 86 0C71.7 0 57.3 0 43 0C28.7 0 14.3 0 7.2 0L0 0Z" fill="#a80038"></path></svg>
+
+
+<section>
+    <div class="container">
+                <a data-aos="fade-down" href="" class="text-center">
+                    <h3 class="text-dark display-3 headtexthover">کیک های مناسبتی</h3>
+                </a>
+                <div data-aos="fade-up" class="row py-4">
+                    <div class="swiper mySwiper p-0 pt-2">
+                        <div class="swiper-wrapper ">
+                            <div class="swiper-slide"> <div class="card" style="width: 12rem;">
+                                <img src="assets/pics/trendcack2.JPEG" class="d-block w-100 card-img-top" alt="...">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">کیک مناسبتی</h5>
+                                    <h6 class="card-subtitle mb-2 text-body-secondary">قیمت 149 تومان</h6>
+                                    <div class="row">
+                                        <div class="col-4 h3">
+                                            <lord-icon class="w-100 h-100"
+                                                       src="https://cdn.lordicon.com/odavpkmb.json"
+                                                       trigger="hover"
+                                                       colors="primary:#2b2024,secondary:#fd0054"
+                                                       style="width:250px;height:250px">
+                                            </lord-icon>
+                                        </div>
+                                        <div class="col-4 p-0">
+                                            <input class="w-100" type="number" placeholder="1">
+                                        </div>
+                                        <div class="col-4 h3">
+                                            <lord-icon class="w-100 h-100"
+                                                       src="https://cdn.lordicon.com/jjoolpwc.json"
+                                                       trigger="hover"
+                                                       colors="primary:#2b2024,secondary:#fd0054"
+                                                       style="width:250px;height:250px">
+                                            </lord-icon>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div></div>
+                            <div class="swiper-slide"> <div class="card" style="width: 12rem;">
+                                <img src="assets/pics/trendcack2.JPEG" class="d-block w-100 card-img-top" alt="...">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">کیک مناسبتی</h5>
+                                    <h6 class="card-subtitle mb-2 text-body-secondary">قیمت 149 تومان</h6>
+                                    <div class="row">
+                                        <div class="col-4 h3">
+                                            <lord-icon class="w-100 h-100"
+                                                       src="https://cdn.lordicon.com/odavpkmb.json"
+                                                       trigger="hover"
+                                                       colors="primary:#2b2024,secondary:#fd0054"
+                                                       style="width:250px;height:250px">
+                                            </lord-icon>
+                                        </div>
+                                        <div class="col-4 p-0">
+                                            <input class="w-100" type="number" placeholder="1">
+                                        </div>
+                                        <div class="col-4 h3">
+                                            <lord-icon class="w-100 h-100"
+                                                       src="https://cdn.lordicon.com/jjoolpwc.json"
+                                                       trigger="hover"
+                                                       colors="primary:#2b2024,secondary:#fd0054"
+                                                       style="width:250px;height:250px">
+                                            </lord-icon>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div></div>
+                            <div class="swiper-slide"> <div class="card" style="width: 12rem;">
+                                <img src="assets/pics/trendcack2.JPEG" class="d-block w-100 card-img-top" alt="...">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">کیک مناسبتی</h5>
+                                    <h6 class="card-subtitle mb-2 text-body-secondary">قیمت 149 تومان</h6>
+                                    <div class="row">
+                                        <div class="col-4 h3">
+                                            <lord-icon class="w-100 h-100"
+                                                       src="https://cdn.lordicon.com/odavpkmb.json"
+                                                       trigger="hover"
+                                                       colors="primary:#2b2024,secondary:#fd0054"
+                                                       style="width:250px;height:250px">
+                                            </lord-icon>
+                                        </div>
+                                        <div class="col-4 p-0">
+                                            <input class="w-100" type="number" placeholder="1">
+                                        </div>
+                                        <div class="col-4 h3">
+                                            <lord-icon class="w-100 h-100"
+                                                       src="https://cdn.lordicon.com/jjoolpwc.json"
+                                                       trigger="hover"
+                                                       colors="primary:#2b2024,secondary:#fd0054"
+                                                       style="width:250px;height:250px">
+                                            </lord-icon>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div></div>
+                            <div class="swiper-slide"> <div class="card" style="width: 12rem;">
+                                <img src="assets/pics/trendcack2.JPEG" class="d-block w-100 card-img-top" alt="...">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">کیک مناسبتی</h5>
+                                    <h6 class="card-subtitle mb-2 text-body-secondary">قیمت 149 تومان</h6>
+                                    <div class="row">
+                                        <div class="col-4 h3">
+                                            <lord-icon class="w-100 h-100"
+                                                       src="https://cdn.lordicon.com/odavpkmb.json"
+                                                       trigger="hover"
+                                                       colors="primary:#2b2024,secondary:#fd0054"
+                                                       style="width:250px;height:250px">
+                                            </lord-icon>
+                                        </div>
+                                        <div class="col-4 p-0">
+                                            <input class="w-100" type="number" placeholder="1">
+                                        </div>
+                                        <div class="col-4 h3">
+                                            <lord-icon class="w-100 h-100"
+                                                       src="https://cdn.lordicon.com/jjoolpwc.json"
+                                                       trigger="hover"
+                                                       colors="primary:#2b2024,secondary:#fd0054"
+                                                       style="width:250px;height:250px">
+                                            </lord-icon>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div></div>
+                            <div class="swiper-slide"> <div class="card" style="width: 12rem;">
+                                <img src="assets/pics/trendcack2.JPEG" class="d-block w-100 card-img-top" alt="...">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">کیک مناسبتی</h5>
+                                    <h6 class="card-subtitle mb-2 text-body-secondary">قیمت 149 تومان</h6>
+                                    <div class="row">
+                                        <div class="col-4 h3">
+                                            <lord-icon class="w-100 h-100"
+                                                       src="https://cdn.lordicon.com/odavpkmb.json"
+                                                       trigger="hover"
+                                                       colors="primary:#2b2024,secondary:#fd0054"
+                                                       style="width:250px;height:250px">
+                                            </lord-icon>
+                                        </div>
+                                        <div class="col-4 p-0">
+                                            <input class="w-100" type="number" placeholder="1">
+                                        </div>
+                                        <div class="col-4 h3">
+                                            <lord-icon class="w-100 h-100"
+                                                       src="https://cdn.lordicon.com/jjoolpwc.json"
+                                                       trigger="hover"
+                                                       colors="primary:#2b2024,secondary:#fd0054"
+                                                       style="width:250px;height:250px">
+                                            </lord-icon>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div></div>
+                            <div class="swiper-slide"> <div class="card" style="width: 12rem;">
+                                <img src="assets/pics/trendcack2.JPEG" class="d-block w-100 card-img-top" alt="...">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">کیک مناسبتی</h5>
+                                    <h6 class="card-subtitle mb-2 text-body-secondary">قیمت 149 تومان</h6>
+                                    <div class="row">
+                                        <div class="col-4 h3">
+                                            <lord-icon class="w-100 h-100"
+                                                       src="https://cdn.lordicon.com/odavpkmb.json"
+                                                       trigger="hover"
+                                                       colors="primary:#2b2024,secondary:#fd0054"
+                                                       style="width:250px;height:250px">
+                                            </lord-icon>
+                                        </div>
+                                        <div class="col-4 p-0">
+                                            <input class="w-100" type="number" placeholder="1">
+                                        </div>
+                                        <div class="col-4 h3">
+                                            <lord-icon class="w-100 h-100"
+                                                       src="https://cdn.lordicon.com/jjoolpwc.json"
+                                                       trigger="hover"
+                                                       colors="primary:#2b2024,secondary:#fd0054"
+                                                       style="width:250px;height:250px">
+                                            </lord-icon>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div></div>
+                            <div class="swiper-slide"> <div class="card" style="width: 12rem;">
+                                <img src="assets/pics/trendcack2.JPEG" class="d-block w-100 card-img-top" alt="...">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">کیک مناسبتی</h5>
+                                    <h6 class="card-subtitle mb-2 text-body-secondary">قیمت 149 تومان</h6>
+                                    <div class="row">
+                                        <div class="col-4 h3">
+                                            <lord-icon class="w-100 h-100"
+                                                       src="https://cdn.lordicon.com/odavpkmb.json"
+                                                       trigger="hover"
+                                                       colors="primary:#2b2024,secondary:#fd0054"
+                                                       style="width:250px;height:250px">
+                                            </lord-icon>
+                                        </div>
+                                        <div class="col-4 p-0">
+                                            <input class="w-100" type="number" placeholder="1">
+                                        </div>
+                                        <div class="col-4 h3">
+                                            <lord-icon class="w-100 h-100"
+                                                       src="https://cdn.lordicon.com/jjoolpwc.json"
+                                                       trigger="hover"
+                                                       colors="primary:#2b2024,secondary:#fd0054"
+                                                       style="width:250px;height:250px">
+                                            </lord-icon>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div></div>
+                            <div class="swiper-slide"> <div class="card" style="width: 12rem;">
+                                <img src="assets/pics/trendcack2.JPEG" class="d-block w-100 card-img-top" alt="...">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">کیک مناسبتی</h5>
+                                    <h6 class="card-subtitle mb-2 text-body-secondary">قیمت 149 تومان</h6>
+                                    <div class="row">
+                                        <div class="col-4 h3">
+                                            <lord-icon class="w-100 h-100"
+                                                       src="https://cdn.lordicon.com/odavpkmb.json"
+                                                       trigger="hover"
+                                                       colors="primary:#2b2024,secondary:#fd0054"
+                                                       style="width:250px;height:250px">
+                                            </lord-icon>
+                                        </div>
+                                        <div class="col-4 p-0">
+                                            <input class="w-100" type="number" placeholder="1">
+                                        </div>
+                                        <div class="col-4 h3">
+                                            <lord-icon class="w-100 h-100"
+                                                       src="https://cdn.lordicon.com/jjoolpwc.json"
+                                                       trigger="hover"
+                                                       colors="primary:#2b2024,secondary:#fd0054"
+                                                       style="width:250px;height:250px">
+                                            </lord-icon>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div></div>
+                            <div class="swiper-slide"> <div class="card" style="width: 12rem;">
+                                <img src="assets/pics/trendcack2.JPEG" class="d-block w-100 card-img-top" alt="...">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">کیک مناسبتی</h5>
+                                    <h6 class="card-subtitle mb-2 text-body-secondary">قیمت 149 تومان</h6>
+                                    <div class="row">
+                                        <div class="col-4 h3">
+                                            <lord-icon class="w-100 h-100"
+                                                       src="https://cdn.lordicon.com/odavpkmb.json"
+                                                       trigger="hover"
+                                                       colors="primary:#2b2024,secondary:#fd0054"
+                                                       style="width:250px;height:250px">
+                                            </lord-icon>
+                                        </div>
+                                        <div class="col-4 p-0">
+                                            <input class="w-100" type="number" placeholder="1">
+                                        </div>
+                                        <div class="col-4 h3">
+                                            <lord-icon class="w-100 h-100"
+                                                       src="https://cdn.lordicon.com/jjoolpwc.json"
+                                                       trigger="hover"
+                                                       colors="primary:#2b2024,secondary:#fd0054"
+                                                       style="width:250px;height:250px">
+                                            </lord-icon>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</section>
+
+<footer class="bg-light-color mt-4">
+    <div class="container pt-4">
+        <div class="row">
+            <div class="col-md-3">
+                <a href="" class="col-3 col-md-6 brand-font dark-text fw-bold text-shadow h3">کافه کیک لوتوس</a>
+                <p class="text-black-50 h6 pt-3">متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و</p>
+            </div>
+            <div class="col-md-9">
+                <div class="row align-items-center text-start">
+                    <div class="col-md-4 p-3">
+                        <h4>خدمات مشتریان</h4>
+                        <hr>
+                        <ul>
+                            <li><a href="">پرسش های متداول</a></li>
+                            <li><a href="">راهنمای ثبت سفارش</a></li>
+                            <li><a href="">وبلاگ</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>اطلاعات</h4>
+                        <hr>
+                        <ul>
+                            <li><a href="">انتقادات و پیشنهادات</a></li>
+                            <li><a href="">درباره ما</a></li>
+                            <li><a href="">تماس با ما</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>راه های ارتباطی</h4>
+                        <hr>
+                        <ul>
+                            <li><a href="">اینستاگرام</a></li>
+                            <li><a href="">تلگرام</a></li>
+                            <li><a href="">واتساپ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script src="https://cdn.lordicon.com/lordicon.js"></script>
+<script src="assets/js/scripts.js"></script>
+</body>
+</html>
