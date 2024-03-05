@@ -14,6 +14,36 @@
 </head>
 <body>
 
+<div id="logform">
+    <div class="containerr">
+        <span id="close-form" class="fs-3 dark-pink-text"><i class="ri-close-circle-fill"></i></span>
+        <div class="heading">ورود به حساب کاربری</div>
+        <form class="forrm" action="">
+            <input
+                    placeholder="ایمیل"
+                    id="email"
+                    name="email"
+                    type="email"
+                    class="input"
+                    required=""
+            />
+            <input
+                    placeholder="پسوورد"
+                    id="password"
+                    name="password"
+                    type="password"
+                    class="input"
+                    required=""
+            />
+            <span class="forgot-password"><a class="fs-6" href="#">پسوردت رو فراموش کردی؟</a></span>
+            <input value="ورود" type="submit" class="login-button" />
+            <div class="text-center">
+                <a href="">ثبت نام</a>
+            </div>
+        </form>
+    </div>
+</div>
+
 <header>
     <div class="container-fluid bg-light-color">
         <nav class="row p-3">
@@ -49,14 +79,14 @@
                                style="width:250px;height:250px">
                     </lord-icon>
                 </a>
-                <a class="col-md-3 p-0 mx-auto w-25 text-end" href="">
+                <button class="col-md-3 p-0 mx-auto w-25 text-end" href="">
                     <lord-icon class="w-75 h-100"
                                src="https://cdn.lordicon.com/bgebyztw.json"
                                trigger="hover"
                                colors="primary:#2b2024,secondary:#fd0054"
                                style="width:250px;height:250px">
                     </lord-icon>
-                </a>
+                </button>
             </div>
 
             <div class="col-3 offset-4 d-flex d-md-none align-items-center justify-content-end"><i class="me-2 h2 ri-menu-fill pink-text"></i></div>

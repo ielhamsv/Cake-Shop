@@ -1,4 +1,6 @@
-
+const logIcon = document.getElementById("logicon")
+const logForm = document.getElementById("logform")
+const closeForm = document.getElementById("close-form")
 const Display_menu = document.getElementById("display-menu")
 const menu = document.getElementById("menu")
 const close = document.getElementById("close")
@@ -17,6 +19,14 @@ close.addEventListener("click", function (){
     close.style.height="0"
 })
 
+
+logIcon.addEventListener("click", function (){
+    logForm.style.display="block"
+})
+
+closeForm.addEventListener("click",function (){
+    logForm.style.display="none"
+})
 
 
 
