@@ -1,6 +1,11 @@
 const logIcon = document.getElementById("logicon")
 const logForm = document.getElementById("logform")
 const closeForm = document.getElementById("close-form")
+const closeForms=document.getElementById("close-forms")
+const signupBtn = document.getElementById("signupbtn")
+const logbtn=document.getElementById("loginbtn")
+const log=document.getElementById("log")
+const signup = document.getElementById("signup")
 const Display_menu = document.getElementById("display-menu")
 const menu = document.getElementById("menu")
 const close = document.getElementById("close")
@@ -26,6 +31,19 @@ logIcon.addEventListener("click", function (){
 
 closeForm.addEventListener("click",function (){
     logForm.style.display="none"
+})
+closeForms.addEventListener("click",function (){
+    logForm.style.display="none"
+})
+
+signupBtn.addEventListener("click",function (){
+    log.style.display="none"
+    signup.style.display="block"
+})
+
+logbtn.addEventListener("click",function (){
+    signup.style.display="none"
+    log.style.display="block"
 })
 
 

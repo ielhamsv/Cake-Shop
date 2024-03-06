@@ -15,13 +15,12 @@
 <body>
 
 <div id="logform">
-    <div class="containerr">
+    <div id="log" class="containerr">
         <span id="close-form" class="fs-3 dark-pink-text"><i class="ri-close-circle-fill"></i></span>
         <div class="heading">ورود به حساب کاربری</div>
         <form class="forrm" action="">
             <input
                     placeholder="ایمیل"
-                    id="email"
                     name="email"
                     type="email"
                     class="input"
@@ -29,7 +28,6 @@
             />
             <input
                     placeholder="پسوورد"
-                    id="password"
                     name="password"
                     type="password"
                     class="input"
@@ -38,7 +36,31 @@
             <span class="forgot-password"><a class="fs-6" href="#">پسوردت رو فراموش کردی؟</a></span>
             <input value="ورود" type="submit" class="login-button" />
             <div class="text-center">
-                <a href="">ثبت نام</a>
+                <button id="signupbtn" href="">ثبت نام</button>
+            </div>
+        </form>
+    </div>
+    <div id="signup" class="containerr">
+        <span id="close-forms" class="fs-3 dark-pink-text"><i class="ri-close-circle-fill"></i></span>
+        <div class="heading">ساخت حساب کاربری</div>
+        <form class="forrm" action="">
+            <input
+                    placeholder="ایمیل"
+                    name="email"
+                    type="email"
+                    class="input"
+                    required=""
+            />
+            <input
+                    placeholder="پسوورد"
+                    name="password"
+                    type="password"
+                    class="input"
+                    required=""
+            />
+            <input value="ورود" type="submit" class="login-button" />
+            <div class="text-center">
+                <button id="loginbtn" href="">ثبت نام</button>
             </div>
         </form>
     </div>

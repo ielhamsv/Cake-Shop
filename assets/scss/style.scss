@@ -318,7 +318,11 @@ li{
   backdrop-filter: blur(2px);
   background: rgba(0, 0, 0, 0.3);
 }
+#signup{
+ display: none;
+}
 .containerr {
+  transition-duration :800ms;
   position: absolute;
   top: 15%;
   left: 50%;
@@ -356,6 +360,7 @@ li{
   margin-top: 15px;
   box-shadow: #ffcfe9 0px 10px 10px -5px;
   border-inline: 2px solid transparent;
+  text-align: right;
 }
 
 .forrm .input::-moz-placeholder {
