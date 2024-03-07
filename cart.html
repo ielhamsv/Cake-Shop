@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>سبد خرید</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="node_modules/remixicon/fonts/remixicon.css">
+</head>
+<body>
+<div id="logform">
+    <div id="log" class="containerr">
+        <span id="close-form" class="fs-3 dark-pink-text"><i class="ri-close-circle-fill"></i></span>
+        <div class="heading">ورود به حساب کاربری</div>
+        <form class="forrm" action="">
+            <input
+                    placeholder="ایمیل"
+                    name="email"
+                    type="email"
+                    class="input"
+                    required=""
+            />
+            <input
+                    placeholder="پسوورد"
+                    name="password"
+                    type="password"
+                    class="input"
+                    required=""
+            />
+            <span class="forgot-password"><a class="fs-6" href="#">پسوردت رو فراموش کردی؟</a></span>
+            <input value="ورود" type="submit" class="login-button" />
+            <div class="text-center">
+                <button id="signupbtn" href="">ثبت نام</button>
+            </div>
+        </form>
+    </div>
+    <div id="signup" class="containerr">
+        <span id="close-forms" class="fs-3 dark-pink-text"><i class="ri-close-circle-fill"></i></span>
+        <div class="heading">ساخت حساب کاربری</div>
+        <form class="forrm" action="">
+            <input
+                    placeholder="ایمیل"
+                    name="email"
+                    type="email"
+                    class="input"
+                    required=""
+            />
+            <input
+                    placeholder="پسوورد"
+                    name="password"
+                    type="password"
+                    class="input"
+                    required=""
+            />
+            <input value="ورود" type="submit" class="login-button" />
+            <div class="text-center">
+                <button id="loginbtn" href="">ثبت نام</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<header>
+    <div class="container-fluid bg-light-color">
+        <nav class="row p-3">
+            <div class="col-md-4 col-5">
+                <div class="row align-items-center">
+                    <a href="" class="brand-font dark-pink-text fw-bold text-shadow h3">کافه کیک لوتوس</a>
+                </div>
+            </div>
+
+            <div  class="col-md-5 d-none d-md-flex row mt-2 align-items-center justify-content-center">
+                <div  class="input-container">
+                    <input type="text" name="text" class="input text-dark bg-light-color" placeholder="جستجو...">
+                    <span class="icon">
+    <svg width="19px" height="19px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path opacity="1" d="M14 5H20" stroke="#A80038" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path opacity="1" d="M14 8H17" stroke="#A80038" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M21 11.5C21 16.75 16.75 21 11.5 21C6.25 21 2 16.75 2 11.5C2 6.25 6.25 2 11.5 2" stroke="#A80038" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path> <path opacity="1" d="M22 22L20 20" stroke="#A80038" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+  </span>
+                </div>
+            </div>
+
+            <div class="col-md-3 d-none d-md-flex row justify-content-end">
+                <a href="cart.html" class="col-md-3 p-0 w-25 text-end mx-auto">
+                    <lord-icon class="w-75 h-100"
+                               src="https://cdn.lordicon.com/odavpkmb.json"
+                               trigger="hover"
+                               colors="primary:#2b2024,secondary:#fd0054"
+                               style="width:250px;height:250px">
+                    </lord-icon>
+                </a>
+                <a href="" class="col-md-3 p-0 w-25 text-end mx-auto">
+                    <lord-icon class="w-75 h-100"
+                               src="https://cdn.lordicon.com/jjoolpwc.json"
+                               trigger="hover"
+                               colors="primary:#2b2024,secondary:#fd0054"
+                               style="width:250px;height:250px">
+                    </lord-icon>
+                </a>
+                <button id="logicon" class="col-md-3 p-0 mx-auto w-25 text-end" href="">
+                    <lord-icon class="w-75 h-100"
+                               src="https://cdn.lordicon.com/bgebyztw.json"
+                               trigger="hover"
+                               colors="primary:#2b2024,secondary:#fd0054"
+                               style="width:250px;height:250px">
+                    </lord-icon>
+                </button>
+            </div>
+
+            <div class="col-3 offset-4 d-flex d-md-none align-items-center justify-content-end"><i class="me-2 h2 ri-menu-fill pink-text"></i></div>
+        </nav>
+
+    </div>
+</header>
+
+<div id="menu-container" class="d-md-flex d-none text-center">
+    <ul id="menu" class="position-absolute top-0 end-0 start-0 mx-auto row m-0 p-0 justify-content-center  w-100 bg-light-color shadow-lg">
+        <li class="col-1 bg-light-color p-2 text-center"><a class="hover-menu text-dark text-center" href="">کیک</a></li>
+        <li class="col-1 bg-light-color p-2 text-center"><a class="hover-menu text-dark text-center" href="">شیرینی</a></li>
+        <li class="col-1 bg-light-color p-2 text-center"><a class="hover-menu text-dark text-center" href="">دسر</a></li>
+        <li class="col-1 bg-light-color p-2 text-center"><a class="hover-menu text-dark text-center" href="">آبنبات</a></li>
+        <li class="col-1 offset-1 bg-light-color p-2 text-center"><a class="hover-menu text-dark text-center" href="">فینگر فود</a></li>
+        <li class="col-1 bg-light-color p-2 text-center"><a class="hover-menu text-dark text-center" href="">سوالات</a></li>
+        <li class="col-1 bg-light-color p-2 text-center"><a class="hover-menu text-dark text-center" href="">ارتباط</a></li>
+        <li class="col-1 bg-light-color p-2 text-center"><a class="hover-menu text-dark text-center" href="">خانه</a></li>
+    </ul>
+    <div id="display-menu" class="position-absolute top-0 end-0 start-0 mx-auto bg-dark-pink text-white text-center h3">منو <div><i class="ri-arrow-down-wide-line"></i></div></div>
+    <div id="close" class="position-absolute top-0 end-0 start-0 mx-auto bg-dark-pink text-center"><i class="ri-close-fill text-white"></i></div>
+</div>
+
+<section>
+    <div class="container my-4">
+    <h1>سبد خرید</h1>
+        <div class="row p-0 g-2">
+            <div class="col-12 border border-danger bg-danger-subtle rounded-3 p-3">سبد خرید شما خالی است  <i class="text-danger ri-close-fill"></i></div>
+            <div class="col-12">
+                <p>محصول مورد نظر خود را انتخاب یا از طریق لینک زیر عکس آن را برای ما ارسال کنید<i class="ri-corner-left-down-line"></i></p>
+
+            </div>
+            <a class="Btn mx-auto" href="">ارسال عکس دلخواه</a>
+        </div>
+    </div>
+</section>
+
+<footer class="position-absolute bottom-0 start-0 end-0 bg-light-color mt-4">
+    <div class="container pt-4">
+        <div class="row">
+            <div class="col-md-3">
+                <a href="" class="col-3 col-md-6 brand-font dark-text fw-bold text-shadow h3">کافه کیک لوتوس</a>
+                <p class="text-black-50 h6 pt-3">متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و</p>
+            </div>
+            <div class="col-md-9">
+                <div class="row align-items-center text-start">
+                    <div class="col-md-4 p-3">
+                        <h4>خدمات مشتریان</h4>
+                        <hr>
+                        <ul>
+                            <li><a href="">پرسش های متداول</a></li>
+                            <li><a href="">راهنمای ثبت سفارش</a></li>
+                            <li><a href="">وبلاگ</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>اطلاعات</h4>
+                        <hr>
+                        <ul>
+                            <li><a href="">انتقادات و پیشنهادات</a></li>
+                            <li><a href="">درباره ما</a></li>
+                            <li><a href="">تماس با ما</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>راه های ارتباطی</h4>
+                        <hr>
+                        <ul>
+                            <li><a href="">اینستاگرام</a></li>
+                            <li><a href="">تلگرام</a></li>
+                            <li><a href="">واتساپ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script src="https://cdn.lordicon.com/lordicon.js"></script>
+<script src="assets/js/scripts.js"></script>
+</body>
+</html>
