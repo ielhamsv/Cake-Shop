@@ -320,14 +320,23 @@ li{
 }
 #signup{
  display: none;
-}
-.containerr {
   transition-duration :800ms;
   position: absolute;
   top: 15%;
   left: 50%;
   transform: translate(-50%, 0);
   min-width: 350px;
+}
+#log{
+  transition-duration :800ms;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+
+  transform: translate(-50%, 0);
+  min-width: 350px;
+}
+.containerr {
   background: #fdf8fc;
   background: linear-gradient(
                   0deg,
@@ -364,11 +373,11 @@ li{
 }
 
 .forrm .input::-moz-placeholder {
-  color: rgb(170, 170, 170);
+  color: rgb(211, 16, 120);
 }
 
 .forrm .input::placeholder {
-  color: rgb(170, 170, 170);
+  color: rgb(209, 18, 114);
 }
 
 .forrm .input:focus {
@@ -484,4 +493,10 @@ li{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.upload-img{
+  border: 2px #A80038 dashed;
+  cursor: pointer;
+  margin: .5rem;
 }

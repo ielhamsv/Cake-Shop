@@ -2,7 +2,7 @@
 <html lang="fa" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <title>سبد خرید</title>
+    <title>فرم ثبت سفارش دلخواه</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.rtl.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="node_modules/remixicon/fonts/remixicon.css">
@@ -126,21 +126,61 @@
     <div id="close" class="position-absolute top-0 end-0 start-0 mx-auto bg-dark-pink text-center"><i class="ri-close-fill text-white"></i></div>
 </div>
 
-<section>
-    <div class="container my-4">
-    <h1>سبد خرید</h1>
-        <div class="row p-0 g-2">
-            <div class="col-12 border border-danger bg-danger-subtle rounded-3 p-3">سبد خرید شما خالی است  <i class="text-danger ri-close-fill"></i></div>
-            <div class="col-12">
-                <p>محصول مورد نظر خود را انتخاب یا از طریق لینک زیر عکس آن را برای ما ارسال کنید<i class="ri-corner-left-down-line"></i></p>
+<section class="my-4 pt-4">
+    <div class="container">
+        <div class="containerr">
 
-            </div>
-            <a class="Btn mx-auto" href="UploadOrder.html">ارسال عکس دلخواه</a>
+            <div class="heading">سفارش کیک دلخواه</div>
+            <form class="forrm" action="">
+                <input
+                        placeholder="نام و نام خانوادگی"
+                        name="text"
+                        type="text"
+                        class="input"
+                        required=""
+                />
+                <input
+                        placeholder="شماره تماس"
+                        name="tel"
+                        type="tel"
+                        class="input"
+                        required=""
+                />
+                <input
+                        placeholder="(kg) مقدار "
+                        name="number"
+                        type="number"
+                        class="input"
+                        required=""
+                />
+
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-6 text-center">
+                        <label class="upload-img text-center px-3 w-100" for="file">
+                            <lord-icon
+                                    src="https://cdn.lordicon.com/rehjpyyh.json"
+                                    trigger="hover"
+                                    colors="primary:#2b2024,secondary:#fd0054"
+                                    style="width:50px;height:50px">
+                            </lord-icon>
+                            <p>اپلود عکس</p>
+                            <i class="dark-pink-text fs-4 ri-upload-2-line"></i>
+                        <input class="d-none" name="file" id="file" type="file">
+                        </label>
+                    </div>
+                    <div class="col-12 col-md-6 text-center">
+                        <textarea class="m-2 w-100" cols="20" rows="5">توضیحات سفارش...</textarea>
+                    </div>
+                </div>
+                <input value="ارسال" type="submit" class="login-button" />
+
+            </form>
         </div>
     </div>
 </section>
 
-<footer class="position-absolute bottom-0 start-0 end-0 bg-light-color mt-4">
+
+<footer class="bg-light-color mt-4">
     <div class="container pt-4">
         <div class="row">
             <div class="col-md-3">
@@ -181,8 +221,6 @@
         </div>
     </div>
 </footer>
-
-
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
